@@ -6,6 +6,10 @@ asap@~2.0.3:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.5.tgz#522765b50c3510490e52d7dcfe085ef9ba96958f"
 
+bpg-decoder@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/bpg-decoder/-/bpg-decoder-0.0.1.tgz#79728813e241760b5ee8208780a924b5cfb27209"
+
 core-js@^1.0.0:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"

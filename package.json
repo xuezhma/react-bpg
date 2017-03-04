@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/xuezhma/react-bpg#readme",
   "dependencies": {
+    "bpg-decoder": "^0.0.1",
     "react": "^15.4.2"
   }
 }
