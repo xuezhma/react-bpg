@@ -1,0 +1,22 @@
+{
+  "name": "react-bpg",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./src/react-bpg.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuezhma/react-bpg.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xuezhma/react-bpg/issues"
+  },
+  "homepage": "https://github.com/xuezhma/react-bpg#readme",
+  "dependencies": {
+    "react": "^15.4.2"
+  }
+}
