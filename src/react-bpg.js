@@ -1,10 +1,9 @@
 import React, {Component} from 'react'
-import  bpgDecoders from 'bpg-decoder'
 
 class ReactBPG extends Component {
     constructor(props) {
         super(props)
-        this.BPGDecoder = bpgDecoders[this.props.decoder || "BPGDecoder"]
+        this.BPGDecoder = this.props.BPGDecoder || window.BPGDecoder
     }
 
     componentDidMount() {
