@@ -4,7 +4,16 @@ import decoders from 'bpg-decoder'
 class ReactBPG extends Component {
     constructor(props) {
         super(props)
-        this.BPGDecoder = decoders[this.props.BPGDecoder || "BPGDecoder8a"]
+        switch(this.props.BPGDecoder) {
+            case "BPGDecoder8":
+                this.BPGDecoder = decoders["BPGDecoder8"]
+                break;
+            case "BPGDecoder":
+                this.BPGDecoder = decoders["BPGDecoder"]
+                break;
+            default:
+                this.BPGDecoder = decoders["BPGDecoder8a"]
+        }
     }
 
     componentDidMount() {
