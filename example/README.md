@@ -5,7 +5,7 @@ To run the example,
 run
 ```
 yarn
-``
+```
 and then
 ```
 yarnpkg start
