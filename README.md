@@ -22,3 +22,4 @@ class YourCoolAwesomeClass extends React.Component {
 		return <ReactBPG src="path/to/your/awesome/bpg/picture.bpg" />
 	}
 }
+```
