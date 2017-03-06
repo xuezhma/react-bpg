@@ -30,7 +30,7 @@ class ReactBPG extends Component {
 
     render() {
         return (
-            <canvas ref="canvas" />
+            <canvas ref="canvas" className={this.props.className} style={this.props.style}/>
         )
     }
 }
