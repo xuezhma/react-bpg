@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component, PropTypes } from 'react'
 import decoders from 'bpg-decoder'
 
 class ReactBPG extends Component {
@@ -24,6 +24,11 @@ class ReactBPG extends Component {
             <canvas ref="canvas" />
         )
     }
+}
+
+ReactBPG.propTypes = {
+	src: PropTypes.string.isRequired,
+	BPGDecoder: PropTypes.string
 }
 
 export default ReactBPG
