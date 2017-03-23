@@ -17,15 +17,20 @@ class ReactBPG extends Component {
     }
 
     componentDidMount() {
-        const ctx = this.refs.canvas.getContext('2d')
-        const img = new this.BPGDecoder(ctx);
-        const self = this
-        img.onload = function() {
-            self.refs.canvas.width = this.imageData.width
-            self.refs.canvas.height = this.imageData.height
-            ctx.putImageData(this.imageData, 0, 0)
-        }
-        img.load(this.props.src)
+		try {
+			const ctx = this.refs.canvas.getContext('2d')
+	        const img = new this.BPGDecoder(ctx);
+	        const self = this
+	        img.onload = function() {
+	            self.refs.canvas.width = this.imageData.width
+	            self.refs.canvas.height = this.imageData.height
+	            ctx.putImageData(this.imageData, 0, 0)
+	        }
+	        img.load(this.props.src)
+		} catch (e) {
+			if (this.props.onError) return this.props.onError.call(this)
+			throw(e)
+		}
     }
 
     render() {
@@ -37,6 +42,7 @@ class ReactBPG extends Component {
 
 ReactBPG.propTypes = {
 	src: PropTypes.string.isRequired,
+	onError: PropTypes.func,
 	BPGDecoder: PropTypes.string
 }
 
