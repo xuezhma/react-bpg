@@ -1,12 +1,12 @@
 {
   "name": "react-bpg",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "babel src/react-bpg.js -o index.js",
     "test": "echo \"No test specified\" && exit 0",
-	"np": "np"
+    "np": "np"
   },
   "repository": {
     "type": "git",
