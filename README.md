@@ -17,6 +17,11 @@ If `onError` is left empty, an `could not decode image` error will be threw.
 
 We use a dependency for BPGDecoder from npm: [bpg-decoder](https://www.npmjs.com/package/bpg-decoder/), this decoder has three different options: `BPGDecoder` (14 bits, no animation), `BPGDecoder8` (8 bits, no animation) and `BPGDecoder8a` (8 bits, animation), and our default is `BPGDecoder8a`.
 
+`className`: (Optional string)
+`style`: (Optional object)
+
+We recommend you to specify the size of your images so your layout does  not change when the images are loaded in
+
 ## Usage:
 
 ```

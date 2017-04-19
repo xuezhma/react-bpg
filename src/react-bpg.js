@@ -43,7 +43,9 @@ class ReactBPG extends Component {
 ReactBPG.propTypes = {
 	src: PropTypes.string.isRequired,
 	onError: PropTypes.func,
-	BPGDecoder: PropTypes.string
+	BPGDecoder: PropTypes.string,
+	className: PropTypes.string,
+	style: PropTypes.object
 }
 
 export default ReactBPG
